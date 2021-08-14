@@ -36,4 +36,5 @@ jobs:
           prettier: true
           eslint: true
           auto_fix: true
+          commit_message: 'A ${linter} issue was resolved automatically'
 
