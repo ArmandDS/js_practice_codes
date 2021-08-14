@@ -1,6 +1,5 @@
-
 function decreaseByOne(arr) {
-  const newA =JSON.parse(JSON.stringify(arr));
+  const newA = JSON.parse(JSON.stringify(arr));
   newA[0]--;
   newA[1]--;
   return newA;
