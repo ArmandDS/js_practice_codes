@@ -1,4 +1,4 @@
-var arr = ["first", "second", "third", "fourth"];
+var arr = ['first', 'second', 'third', 'fourth'];
 
 for (var i = 0; i < 3; i++) {
   console.log(i);

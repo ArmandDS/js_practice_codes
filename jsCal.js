@@ -7,22 +7,22 @@ class calculator {
   }
 }
 
-calculator.prototype.add = function (num) {
+calculator.prototype.add = function(num) {
   this.val += num;
   console.log(this.result());
   return this;
 };
 
-calculator.prototype.mult = function (num) {
+calculator.prototype.mult = function(num) {
   this.val *= num;
   console.log(this.result());
   return this;
 };
 
-calculator.prototype.do = function (ope, num) {
-  if (ope === "+") {
+calculator.prototype.do = function(ope, num) {
+  if (ope === '+') {
     this.add(num);
-  } else if (ope === "*") {
+  } else if (ope === '*') {
     this.mult(num);
   }
 };
