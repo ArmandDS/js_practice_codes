@@ -28,7 +28,6 @@ jobs:
       - name: Install Node.js dependencies
         run: |
             npm ci
-            prettier --fix
 
       - name: Run linters
         uses: wearerequired/lint-action@v1
