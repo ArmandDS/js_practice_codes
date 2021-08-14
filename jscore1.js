@@ -1,18 +1,18 @@
-function getNormUser(user){
-    // user.username = user.username.toLowerCase();
-    // return {...user, username: user.username.toLowerCase(), id:30};
-    const user1 =  JSON.parse(JSON.stringify(user));
-    user1.username = user1.username.toLowerCase();
-    return user1
+function getNormUser(user) {
+  // user.username = user.username.toLowerCase();
+  // return {...user, username: user.username.toLowerCase(), id:30};
+  const user1 = JSON.parse(JSON.stringify(user));
+  user1.username = user1.username.toLowerCase();
+  return user1;
 }
 
 
-let u = {
-    id: 12,
-    username: 'SomeUSer',
+const u = {
+  id: 12,
+  username: 'SomeUSer',
 };
 
-let u2 = getNormUser(u);
+const u2 = getNormUser(u);
 
 
-console.log(u, u2)
+console.log(u, u2);

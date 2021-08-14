@@ -1,14 +1,14 @@
 
 const A = {
-    elem: 5
-}
+  elem: 5,
+};
 
 const B = {
-    elem: 10,
-    getElem(num){
-        return this.elem*num
-    }
-}
+  elem: 10,
+  getElem(num) {
+    return this.elem*num;
+  },
+};
 
 const getElem = B.getElem;
 
