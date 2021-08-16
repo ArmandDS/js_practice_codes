@@ -8,7 +8,7 @@ function getNormUser(user) {
 
 const u = {
   id: 12,
-  username: 'SomeUSer',
+  username: "SomeUSer",
 };
 
 const u2 = getNormUser(u);
