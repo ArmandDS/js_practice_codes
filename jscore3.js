@@ -3,7 +3,7 @@ function printAndNorm(str, nomalize) {
   return nomalize(str);
 }
 
-const name1 = "CodeTest";
+const name1 = 'CodeTest';
 
 const normName1 = printAndNorm(name1, (str) => str.toLowerCase());
 
@@ -13,4 +13,4 @@ const normName2 = printAndNorm(normName1, (str) => {
   str = str.toUpperCase();
 });
 
-console.log(normName2, "call");
+console.log(normName2, 'call');
