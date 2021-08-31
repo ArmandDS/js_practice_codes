@@ -5,10 +5,10 @@ function createSentence() {
   return {
     words: [],
     add(str) {
-      str.split(" ").forEach((word) => {
+      str.split(' ').forEach((word) => {
         const trimWord = word.trim();
 
-        if (trimWord !== "") {
+        if (trimWord !== '') {
           this.words.push(trimWord);
           // console.log(this.words, "tr" );
         }
@@ -17,8 +17,8 @@ function createSentence() {
       return this;
     },
     get() {
-      console.log(this.words, "h");
-      return this.words.join(" ") + ".";
+      console.log(this.words, 'h');
+      return this.words.join(' ') + '.';
     },
   };
 }
@@ -34,7 +34,7 @@ function createLower() {
 }
 
 const n = createLower();
-n.add("Mola Mundo");
+n.add('Mola Mundo');
 
 // console.log(createSentence().add("Mola Mundo"));
 
