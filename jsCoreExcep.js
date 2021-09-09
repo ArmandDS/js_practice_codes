@@ -1,13 +1,13 @@
 function integerConcatenation(a, b) {
   if (!Number.isInteger(a)) {
-    throw 'The first variable not a Integer';
+    throw "The first variable not a Integer";
   }
   if (!Number.isInteger(b)) {
-    throw 'The second variable not a Integer';
+    throw "The second variable not a Integer";
   }
 
   if (a === 0) {
-    throw 'The first variable is zero';
+    throw "The first variable is zero";
   }
 
   return a.toString() + b.toString();
@@ -16,7 +16,7 @@ function integerConcatenation(a, b) {
 let answer;
 
 try {
-  answer = integerConcatenation('0', 4);
+  answer = integerConcatenation("0", 4);
 } catch (err) {
   answer = err;
 } finally {
