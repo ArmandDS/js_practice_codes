@@ -3,18 +3,18 @@ class IntegerArray {
     val.forEach((v) => {
       // console.log(v, "V");
       if (!Number.isInteger(v)) {
-        throw new Error("No a integer");
+        throw new Error('No a integer');
       }
     });
     this.array = val;
   }
 }
 
-IntegerArray.prototype.sum = function () {
+IntegerArray.prototype.sum = function() {
   return this.array.reduce((a, b) => a + b, 0);
 };
 
-IntegerArray.prototype.even = function () {
+IntegerArray.prototype.even = function() {
   return new IntegerArray(...this.array.filter((num) => num % 2 === 0));
 };
 
