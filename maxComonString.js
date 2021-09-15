@@ -2,7 +2,7 @@ function maxComS(words, k) {
   let matrix_1 = [];
   let longest = 0;
   let c = 0;
-  let long_str = "";
+  let long_str = '';
   const result = [];
   const resultado = {};
   words.forEach((element) => {
@@ -12,7 +12,7 @@ function maxComS(words, k) {
     words.forEach((ele) => {
       const m = element.length + 1;
       const n = ele.length + 1;
-      long_str = "";
+      long_str = '';
       longest = 0;
       c = 0;
       // console.log(m,n);
@@ -32,7 +32,7 @@ function maxComS(words, k) {
             matrix_1[i + 1][j + 1] = c;
             if (c >= longest) {
               if (c == longest) {
-                long_str += " " + element.slice(i - c + 1, i + 1);
+                long_str += ' ' + element.slice(i - c + 1, i + 1);
               }
               longest = c;
               long_str = element.slice(i - c + 1, i + 1);
@@ -84,12 +84,12 @@ function maxComS(words, k) {
 
     let max_split_letters = 0;
     result_filter.forEach((elem) => {
-      if (elem.toString().split("").length >= max_split_letters) {
-        max_split_letters = elem.toString().split("").length;
+      if (elem.toString().split('').length >= max_split_letters) {
+        max_split_letters = elem.toString().split('').length;
       }
     });
     max_letter = result_filter.filter((elem) => {
-      if (elem.toString().split("").length == max_split_letters) {
+      if (elem.toString().split('').length == max_split_letters) {
         return elem;
       }
     });
@@ -100,18 +100,18 @@ function maxComS(words, k) {
   return result_filter[0];
 }
 
-console.log(maxComS(["dragon", "rage", "age", "savage"], 2));
+console.log(maxComS(['dragon', 'rage', 'age', 'savage'], 2));
 
-console.log(maxComS(["aaaaa", "aabbbaa", "bbbaabbb", "ccc", "ccbbbc"], 3));
+console.log(maxComS(['aaaaa', 'aabbbaa', 'bbbaabbb', 'ccc', 'ccbbbc'], 3));
 
 console.log(
-  maxComS(
-    [
-      "luclnyuvojoculuaielduaudv",
-      "dwrsztqgvqadsfepqwlfmdliw",
-      "mdvfkozievilwxweczgwcvvbo",
-      "qbefugwzqgdwmolqibbyyzdvm",
-    ],
-    3
-  )
+    maxComS(
+        [
+          'luclnyuvojoculuaielduaudv',
+          'dwrsztqgvqadsfepqwlfmdliw',
+          'mdvfkozievilwxweczgwcvvbo',
+          'qbefugwzqgdwmolqibbyyzdvm',
+        ],
+        3,
+    ),
 );
