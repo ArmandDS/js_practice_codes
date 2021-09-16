@@ -2,9 +2,9 @@ function getFunc(lenght) {
   const len = lenght;
   let last_pos = 0;
   let total_len = 0;
-  return function (starpos, endpos) {
+  return function(starpos, endpos) {
     if (starpos < len && endpos < len) {
-      console.log(last_pos, "last_pos", endpos);
+      console.log(last_pos, 'last_pos', endpos);
       total_len = Math.abs(starpos - endpos) + Math.abs(starpos - last_pos);
       if (total_len <= 5) {
         last_pos = endpos;
