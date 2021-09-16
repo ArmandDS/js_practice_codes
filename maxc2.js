@@ -2,7 +2,7 @@ function maxC(words, k) {
   const pre_result = [];
   words.forEach((w1) => {
     let c = 0;
-    let most_long = '';
+    let most_long = "";
     let longest = 0;
     words.forEach((w2) => {
       const n = w1.length + 1;
@@ -68,31 +68,31 @@ function maxC(words, k) {
   let max_len = 0;
   const final_result = [];
   filter_array.forEach((fa) => {
-    if (fa.split('').length > max_len) {
-      max_len = fa.split('').length;
+    if (fa.split("").length > max_len) {
+      max_len = fa.split("").length;
     }
   });
 
   filter_array.forEach((fa) => {
-    if (fa.split('').length == max_len) {
+    if (fa.split("").length == max_len) {
       final_result.push(fa);
     }
   });
   return final_result[0];
 }
 
-console.log(maxC(['dragon', 'rage', 'age', 'savage'], 2));
+console.log(maxC(["dragon", "rage", "age", "savage"], 2));
 
-console.log(maxC(['aaaaa', 'aabbbaa', 'bbbaabbb', 'ccc', 'ccbbbc'], 3));
+console.log(maxC(["aaaaa", "aabbbaa", "bbbaabbb", "ccc", "ccbbbc"], 3));
 
 console.log(
-    maxC(
-        [
-          'luclnyuvojoculuaielduaudv',
-          'dwrsztqgvqadsfepqwlfmdliw',
-          'mdvfkozievilwxweczgwcvvbo',
-          'qbefugwzqgdwmolqibbyyzdvm',
-        ],
-        3,
-    ),
+  maxC(
+    [
+      "luclnyuvojoculuaielduaudv",
+      "dwrsztqgvqadsfepqwlfmdliw",
+      "mdvfkozievilwxweczgwcvvbo",
+      "qbefugwzqgdwmolqibbyyzdvm",
+    ],
+    3
+  )
 );

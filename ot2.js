@@ -1,22 +1,20 @@
-
 function ot(length) {
   const len = length;
   let final_pos = 0;
-  return function(startpos, endpos) {
-    const total = Math.abs(startpos- endpos) + Math.abs(startpos- final_pos);
-    if ( total <= 5) {
+  return function (startpos, endpos) {
+    const total = Math.abs(startpos - endpos) + Math.abs(startpos - final_pos);
+    if (total <= 5) {
       final_pos = endpos;
-      return total*100;
+      return total * 100;
     } else if (total > 5 && total <= 10) {
       final_pos = endpos;
-      return total*150;
+      return total * 150;
     } else {
       final_pos = endpos;
-      return total*200;
+      return total * 200;
     }
   };
 }
-
 
 var f = ot(20);
 
